@@ -1,0 +1,36 @@
+#djDebug,
+#gravatar,
+#search button {
+  display: none; }
+
+html {
+  -webkit-text-size-adjust: none; }
+
+.cardlist {
+  min-width: 0; }
+  .cardlist .secondary {
+    display: none; }
+  .cardlist .primary {
+    width: 100%; }
+    .cardlist .primary ul {
+      margin-right: 0; }
+
+.card {
+  width: auto;
+  overflow: hidden;
+  margin: 0; }
+  .card small {
+    display: none; }
+
+body#add input[type="text"],
+body#add textarea {
+  width: 97%; }
+
+header {
+  padding-top: 5px;
+  padding-bottom: 8px; }
+
+#search {
+  position: static;
+  width: 200px;
+  margin: 5px auto 0; }

@@ -1,0 +1,355 @@
+/* http://orderedlist.com/articles/structural-tags-in-html5 */
+header,
+footer,
+section,
+nav,
+article,
+aside {
+  display: block; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+a {
+  text-decoration: none; }
+
+*:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.center {
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+#main .card h1:after,
+.cardlist:after,
+#main:after,
+#primary:after,
+#secondary:after,
+.primary:after,
+.secondary:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+body {
+  font: 14px "Helvetica Neue", Arial, sans-serif;
+  background: #dedede; }
+
+a {
+  color: #a2a2a2;
+  text-decoration: underline; }
+
+header {
+  padding: 20px;
+  background: #cccccc; }
+  header h1 {
+    color: #333333;
+    font-size: 20px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6); }
+    header h1 a {
+      color: #333333; }
+
+#main {
+  color: #555555;
+  background: #eeeeee;
+  padding: 30px 20px; }
+
+footer {
+  color: #333333;
+  padding: 20px;
+  background: #dedede;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); }
+  footer div {
+    margin-top: 20px; }
+    footer divfirst-child {
+      margin-top: 0; }
+  footer a {
+    color: #7b7b7b;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); }
+
+#login_out {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px; }
+
+/* http://simplebits.com/notebook/2008/08/14/ampersands.html */
+h1 span.amp, h2 span.amp, h3 span.amp, h4 span.amp, h5 span.amp, h6 span.amp, th span.amp, .cardlist li span.amp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic; }
+
+#copyright {
+  font-size: 11px;
+  color: #aaaaaa; }
+
+#copyright a {
+  color: #aaaaaa; }
+
+body#login #main h1 {
+  font-size: 30px;
+  margin-top: 0; }
+body#login #main .actions {
+  margin-top: 20px; }
+body#login #main input[type=text],
+body#login #main input[type=password] {
+  width: 200px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 15px; }
+body#login #main label {
+  text-align: left;
+  display: block;
+  width: 90px;
+  text-transform: uppercase; }
+body#login.register #main label {
+  width: 150px; }
+
+.cardlist {
+  font-size: 20px;
+  background: white;
+  padding: 20px;
+  margin: -30px -20px;
+  min-width: 800px; }
+  .cardlist h1, .cardlist h2, .cardlist h3, .cardlist h4, .cardlist h5, .cardlist h6 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 15px; }
+    .cardlist h1 span, .cardlist h2 span, .cardlist h3 span, .cardlist h4 span, .cardlist h5 span, .cardlist h6 span {
+      font-size: 14px;
+      padding: 5px 5px 15px; }
+    .cardlist h1 a, .cardlist h2 a, .cardlist h3 a, .cardlist h4 a, .cardlist h5 a, .cardlist h6 a {
+      text-decoration: underline; }
+  .cardlist a {
+    color: #555555;
+    text-decoration: none; }
+    .cardlist a:hover {
+      text-decoration: underline; }
+  .cardlist .primary {
+    float: left;
+    width: 75%; }
+    .cardlist .primary ul {
+      margin-right: 15px; }
+      .cardlist .primary ul li:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .cardlist .primary ul li.odd {
+        background: #ededed;
+        border-bottom: 2px solid #e2e2e1; }
+        .cardlist .primary ul li.odd a {
+          padding-bottom: 3px; }
+      .cardlist .primary ul li a {
+        float: left;
+        padding: 5px 10px;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6); }
+    .cardlist .primary span.creator {
+      float: right; }
+  .cardlist .secondary {
+    float: right;
+    width: 25%;
+    font-size: 14px; }
+    .cardlist .secondary a.browse_all_cards {
+      margin: 0 0 10px 0;
+      background: #dedede;
+      padding: 15px 10px;
+      text-align: center;
+      display: block; }
+    .cardlist .secondary li.odd {
+      background: #f4f4f4; }
+    .cardlist .secondary a {
+      color: #737373;
+      padding: 3px 10px;
+      display: block; }
+    .cardlist .secondary h3 {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+  .cardlist .pagination a,
+  .cardlist .pagination span.placeholder {
+    display: -moz-inline-box;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    padding: 15px 10px;
+    background: #dedede; }
+  .cardlist .pagination span.placeholder {
+    color: #a2a2a2;
+    background: #eeeeee; }
+
+body#add input[type="text"],
+body#add textarea {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 615px;
+  font-size: 14px; }
+body#add textarea {
+  margin-top: 12px;
+  height: 300px; }
+body#add .reminder {
+  font-size: 12px;
+  color: #cccccc;
+  padding-left: 6px; }
+
+.card {
+  color: #333333;
+  background: white;
+  margin: 20px auto;
+  width: 630px;
+  padding: 0 15px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4); }
+  .card h1, .card h2 {
+    margin: 0;
+    font-weight: normal; }
+  .card h1 {
+    margin: 0;
+    padding: 10px 15px 8px;
+    font-size: 18px;
+    border-bottom: 1px solid #aeaaff;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .card h1 small {
+      float: right;
+      font-size: 14px;
+      padding-top: 3px; }
+  .card .edit_delete, .card .tags {
+    font-size: 11px; }
+    .card .edit_delete a, .card .tags a {
+      color: #aaaaaa; }
+  .card .edit_delete {
+    text-align: right; }
+    .card .edit_delete a {
+      padding-left: 5px; }
+  .card .tags {
+    margin-top: -12px; }
+    .card .tags li {
+      display: inline;
+      padding-right: 5px; }
+  .card .wmd-preview {
+    margin-bottom: 20px; }
+  .card .content p, .card .wmd-preview p {
+    line-height: 1.4em; }
+  .card .content h1, .card .content h2, .card .content h3, .card .content h4, .card .content h5, .card .content h6, .card .content p, .card .content ul, .card .content ol, .card .wmd-preview h1, .card .wmd-preview h2, .card .wmd-preview h3, .card .wmd-preview h4, .card .wmd-preview h5, .card .wmd-preview h6, .card .wmd-preview p, .card .wmd-preview ul, .card .wmd-preview ol {
+    margin: 10px 0; }
+  .card .content ul ul,
+  .card .content ol ol,
+  .card .content ol ul,
+  .card .content ul ol, .card .wmd-preview ul ul, .card .wmd-preview ol ol, .card .wmd-preview ol ul, .card .wmd-preview ul ol {
+    margin: 0; }
+  .card .content h1, .card .content h2, .card .content h3, .card .content h4, .card .content h5, .card .content h6, .card .wmd-preview h1, .card .wmd-preview h2, .card .wmd-preview h3, .card .wmd-preview h4, .card .wmd-preview h5, .card .wmd-preview h6 {
+    font-weight: bold;
+    font-size: 14px; }
+  .card .content h1, .card .wmd-preview h1 {
+    font-size: 18px;
+    padding: 0;
+    border: none; }
+  .card .content h2, .card .wmd-preview h2 {
+    font-size: 16px; }
+  .card .content h3, .card .wmd-preview h3 {
+    font-size: 14px; }
+  .card .content img, .card .wmd-preview img {
+    max-width: 630px; }
+  .card .content li, .card .wmd-preview li {
+    margin-left: 20px;
+    margin-bottom: 2px; }
+  .card .content ul li, .card .wmd-preview ul li {
+    list-style: disc; }
+  .card .content ol li, .card .wmd-preview ol li {
+    list-style: decimal; }
+  .card .content blockquote, .card .wmd-preview blockquote {
+    padding-left: 15px;
+    border-left: 2px solid #cccccc;
+    color: #666666; }
+
+#gravatar {
+  position: absolute;
+  top: 5px;
+  right: 70px; }
+  #gravatar img {
+    border: 2px solid #4f4f4f; }
+
+.forked {
+  color: #666666;
+  background: #eeeeee;
+  margin: 10px -15px -10px;
+  padding: 10px; }
+
+.forked + .forked {
+  margin-top: 0; }
+
+.messages {
+  margin: -30px -20px 30px;
+  padding: 10px 20px;
+  background: #bbbbbb; }
+  .messages .success {
+    color: white; }
+
+.errorlist ul li {
+  color: red; }
+
+#not_logged_in #main {
+  font-size: 20px; }
+
+#search {
+  margin: 0 auto;
+  width: 200px;
+  position: relative;
+  margin-top: -30px; }
+  #search input[type=search], #search button {
+    height: 25px; }
+  #search input[type=search] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    border: none;
+    width: 200px; }
